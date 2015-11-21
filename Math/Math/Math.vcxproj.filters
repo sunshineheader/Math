@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\gtest-1.7.0\src\gtest-all.cc" />
+    <ClCompile Include="math\Vector2D.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector3D.cpp" />
+    <ClCompile Include="TestVector2D.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Vector4D.cpp" />
+    <ClCompile Include="TestVector3D.cpp" />
+    <ClCompile Include="math\Matrix4x4.cpp" />
+    <ClCompile Include="TestMatrix4x4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="maths">
+      <UniqueIdentifier>{a5ad3b0c-fc0c-4163-8d05-ad37bfbe5d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{8540f8c6-72dd-414a-b612-41fcf91fb86f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="math\Vector2D.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector3D.h" />
+    <ClInclude Include="math\Vector4D.h" />
+    <ClInclude Include="math\Matrix4x4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="math\Vector2D.inl">
+      <Filter>maths</Filter>
+    </None>
+    <None Include="math\Vector3D.inl" />
+    <None Include="math\Vector4D.inl" />
+    <None Include="math\Matrix4x4.inl" />
+  </ItemGroup>
+</Project>
