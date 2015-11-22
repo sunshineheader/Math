@@ -81,6 +81,7 @@
     <ClCompile Include="TestVector2D.cpp" />
     <ClCompile Include="math\Vector2D.cpp" />
     <ClCompile Include="math\Vector3D.cpp" />
+    <ClCompile Include="TestVector4D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="math\Matrix4x4.inl" />

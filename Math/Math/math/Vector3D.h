@@ -49,6 +49,7 @@ namespace Math{
 		float lengthSquared()const;
 		float distance(const Vector3D & vector) const;
 		float distanceSquared(const Vector3D & vector) const;
+		Vector3D crossProduct(const Vector3D & vector) const;
 
 		void normalize();
 		Vector3D getNormalized()const;

@@ -48,6 +48,16 @@ namespace Math{
 		float dz = vector.z - z;
 		return (dx * dx + dy * dy + dz * dz);
 	}
+
+	Vector3D Vector3D::crossProduct(const Vector3D & vector) const
+	{
+		Vector3D result;
+		result.x = y*vector.z - z*vector.y;
+		result.y = z*vector.x - x*vector.z;
+		result.z = x*vector.y - y*vector.x;
+		return result;
+	}
+
 	std::ostream& operator<<(std::ostream& stream, const Vector3D & vector)
 	{
 		stream << "Vector3D (" << vector.x << "," << vector.y << "," << vector.z << ")" << std::endl;

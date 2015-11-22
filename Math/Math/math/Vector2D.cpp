@@ -48,6 +48,10 @@ namespace Math{
 		float dy = vector.y - y;
 		return (dx * dx + dy * dy);
 	}
+	float Vector2D::crossProduct(const Vector2D & vector) const
+	{
+		return x*vector.y - y*vector.x;
+	}
 
 	std::ostream& operator<<(std::ostream& stream, const Vector2D & vector)
 	{

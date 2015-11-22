@@ -42,15 +42,17 @@ namespace Math{
 
 		inline const Vector2D operator/(const Vector2D & vector) const;
 		inline Vector2D& operator/=(const Vector2D & vector);
-
+		
 	public:
 		inline void scale(float scalar);
 		inline void scale(const Vector2D & vector);
+
 
 	    float length()const;
 	    float lengthSquared()const;
 	    float distance(const Vector2D & vector) const;
 	    float distanceSquared(const Vector2D & vector) const;
+		float crossProduct(const Vector2D & vector) const;
 
 		void normalize();
 		Vector2D getNormalized();
