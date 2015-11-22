@@ -30,6 +30,7 @@
     <ClInclude Include="math\Vector3D.h" />
     <ClInclude Include="math\Vector4D.h" />
     <ClInclude Include="math\Matrix4x4.h" />
+    <ClInclude Include="math\MathUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="math\Vector2D.inl">
